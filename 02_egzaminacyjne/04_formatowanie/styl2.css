@@ -23,5 +23,9 @@
         color: white;
         width: 30%;
         height: 300px;
-        
+        float:left;
+    }
+
+    main {
+        clear: both;
     }
