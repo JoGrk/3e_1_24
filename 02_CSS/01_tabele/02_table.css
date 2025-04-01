@@ -8,6 +8,34 @@ table{
 }
 
 table, td, th {
-    border: solid black;
+    /* border: solid black; */
     border-collapse: collapse;
+}
+th, td{
+    padding: 16px 24px;
+    text-align: left;
+}
+
+thead tr{
+    background-color: #087f5b;
+    color: white;
+}
+
+thead th{
+    width: 25%;
+}
+
+tbody tr:hover{
+    color: #087f5b;
+
+}
+tbody tr:nth-child(odd){
+    background-color: #f8f9fa;
+}
+tbody tr:nth-child(even){
+    background-color: #e9ecef;
+}
+
+tbody tr:last-child {
+    border-bottom: #087f5b solid ;
 }
