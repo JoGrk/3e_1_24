@@ -1,0 +1,42 @@
+body {
+    background-color: red;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+form {
+    width: 30rem;
+    margin: 3rem auto;
+    background-color: aliceblue;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input {
+    display: block;
+    margin-bottom: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    font: inherit;
+    padding: 0.25rem;
+    color: rgb(144, 1, 1);
+    border: 1px solid grey;
+}
+
+input:focus {
+    border: 1px solid rgb(144, 1, 1);
+}
+
+button {
+    display: block;
+    font: inherit;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.75rem;
+    background-color: green;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
