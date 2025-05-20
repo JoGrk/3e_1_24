@@ -1,0 +1,10 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(29, 29, 29);
+}
+
+form {
+    margin:3rem auto;
+    width: 30rem;
+    background-color: white;
+}
