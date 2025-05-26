@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dodatkowe informacje</title>
     <link rel="stylesheet" href="03_formularz.css">
 </head>
+
 <body>
-    
+
     <form action="">
         <h2>Dodatkowe informacje</h2>
         <label for="age">twój wiek</label>
-        <input type="number" name="age" id="age" step="0.5" min="18" max="100"
-        required>
+        <input type="number" name="age" id="age" step="0.5" min="18" max="100" required>
 
         <label for="date">Data urodzenia</label>
         <input type="date" name="date" id="date" min="1921-01-01" max="2007-01-01">
@@ -27,30 +28,43 @@
         <label for="message">Twoja wiadomość</label>
         <textarea name="message" id="message"></textarea>
         <h2>Jak chcesz zweryfikować swoje konto?</h2>
-        <input type="radio" name="verify" id="sms" value="sms" required>
-        <label for="sms">Przez SMS</label>
-        <input type="radio" name="verify" id="phone" value="phone" required>
-        <label for="phone">Przez połączenie telefoniczne</label>
-        <input type="radio" name="verify" id="email" value="email" required>
-        <label for="email">Przez email</label>
-
+        <ul>
+            <li>
+                <input type="radio" name="verify" id="sms" value="sms" required>
+                <label for="sms">Przez SMS</label>
+            </li>
+            <li>
+                <input type="radio" name="verify" id="phone" value="phone" required>
+                <label for="phone">Przez połączenie telefoniczne</label>
+            </li>
+            <li>
+                <input type="radio" name="verify" id="email" value="email" required>
+                <label for="email">Przez email</label>
+            </li>
+        </ul>
         <h2>Preferowana forma kontaktu</h2>
-
-        <input type="checkbox" name="prefered-email" id="prefered-email">
-        <label for="prefered-email">Email</label>
-        <input type="checkbox" name="prefered-phone" id="prefered-phone">
-        <label for="prefered-phone">Telefon</label>
-
+        <ul>
+            <li>
+                <input type="checkbox" name="prefered-email" id="prefered-email">
+                <label for="prefered-email">Email</label>
+            </li>
+            <li>
+                <input type="checkbox" name="prefered-phone" id="prefered-phone">
+                <label for="prefered-phone">Telefon</label>
+            </li>
+        </ul>
         <hr>
+        <div class="flex">
+            <input type="checkbox" name="rules" id="rules" required>
+            <label for="rules">Zgoda na regulamin</label>
+        </div>
+        <div class="flex">
+            <button>Wyślij</button>
+            <button type="reset">Wyczyść</button>
+        </div>
 
-        <input type="checkbox" name="rules" id="rules" required>
-        <label for="rules">Zgoda na regulamin</label>
-
-        <button>Wyślij</button>
-        <button type="reset">Wyczyść</button>
-
-        
 
     </form>
 </body>
+
 </html>
