@@ -1,0 +1,46 @@
+body {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+        'hd hd'
+        'lu ru'
+        'lu rm'
+        'ld rm'
+        'ld rd';
+}
+
+header {
+    background-color: aqua;
+    height: 100px;
+    grid-area: hd;
+}
+
+.left-up {
+    background-color: blueviolet;
+    height: 300px;
+    grid-area: lu;
+}
+
+.left-down {
+    background-color: chartreuse;
+    grid-area: ld;
+    height: 300px;
+}
+
+.right-up {
+    background-color: coral;
+    grid-area: ru;
+    height: 200px;
+}
+
+.right-mid {
+    background-color: crimson;
+    grid-area: rm;
+    height: 200px;
+}
+
+.right-down {
+    background-color: cyan;
+    height: 200px;
+    grid-area: rd;
+}
